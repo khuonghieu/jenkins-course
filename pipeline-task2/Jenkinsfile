@@ -1,0 +1,20 @@
+pipeline {
+    agent {
+        node {
+            label 'Linux-Slave'
+        }
+    }
+    stages {
+        stage('SVC') {
+            steps {
+                sh 'echo "SVC"'
+                sh 'echo "step next"'
+            }
+        }
+        stage('Build') {
+            steps {
+                
+            }
+        }
+    }
+}
